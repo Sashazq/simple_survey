@@ -24,10 +24,10 @@
   cursor: pointer;
 }
 .answer.correct {
-  background-color: greenyellow;
+  background-color: #0a8f08;
 }
 .answer.incorrect {
-  background-color: orange;
+  background-color: #ff0800;
 }
 
 .questionWrapper {
