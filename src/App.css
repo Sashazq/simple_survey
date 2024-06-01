@@ -1,0 +1,44 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.answers {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(3, 150px);
+  gap: 10px;
+}
+
+.answer {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+.answer.correct {
+  background-color: greenyellow;
+}
+.answer.incorrect {
+  background-color: orange;
+}
+
+.questionWrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controls {
+  margin: 40px;
+  display: flex;
+  justify-content: space-around;
+}
