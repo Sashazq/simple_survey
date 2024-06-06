@@ -238,7 +238,7 @@ export const QUESIONS = [
 
       { text: "Potop Szwedski", isAnswer: false },
 
-      { text: "Powstanie styczniowe", isAnswer: false },
+      { text: "Zajazd gniezienski", isAnswer: false },
 
       { text: "Chrzest Polski", isAnswer: false },
 
