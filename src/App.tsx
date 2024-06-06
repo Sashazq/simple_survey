@@ -1,14 +1,15 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import { QUESIONS } from "./config/questions";
+import { getQuestions } from "./config/questions";
 
+const QUESTION_LIST = getQuestions();
 function App() {
-  const [questionList, setQuestionList] = useState(QUESIONS);
-  const [question, setQuestion] = useState(QUESIONS[0]);
+  const [questionList, setQuestionList] = useState(QUESTION_LIST);
+  const [question, setQuestion] = useState(QUESTION_LIST[0]);
   const [currentIndex, setIndex] = useState(-1);
   const [selectedQuestionIndex, setQuestionIndex] = useState(0);
   useEffect(() => {
-    setQuestionList(QUESIONS);
+    setQuestionList(QUESTION_LIST);
   }, []);
 
   const nextQuestion = () => {
